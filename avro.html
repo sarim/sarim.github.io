@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Avro converter</title>
+  <style type="text/css">
+  textarea { width:95%  ; height: 40% ; margin: 5px; font-family: Solaimanlipi,Kalpurush; font-size: 20px;}
+  div { position: fixed; left: 0 ; top : 0 ; width:100% ; height : 100% ; margin : 0 ; padding : 0 ; }
+  </style>
+  <script type="text/javascript" src="https://raw.github.com/torifat/jsAvroPhonetic/master/dist/avro-lib-1.1-beta.min.js"></script>
+  <script type="text/javascript">
+  	window.addEventListener("load", function() 
+  	{
+  	     document.getElementById('btn').onclick = function()
+  	     	{
+  	     	document.getElementById('bn').value = OmicronLab.Avro.Phonetic.parse(document.getElementById('en').value);
+  	     	
+  	     	}
+  	});
+  
+  
+  </script>
+</head>
+
+<body>
+<div>
+<textarea id="en">kichu likhe convert baTon capun</textarea>
+<textarea id="bn"></textarea>
+<button id="btn">Convert</button>
+Just a demo of <a href="https://github.com/torifat/jsAvroPhonetic">jsAvroPhonetic</a>
+</div>
+</body>
+</html>

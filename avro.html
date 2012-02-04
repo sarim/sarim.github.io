@@ -16,6 +16,11 @@
   	     	document.getElementById('bn').value = OmicronLab.Avro.Phonetic.parse(document.getElementById('en').value);
   	     	
   	     	}
+  	     	
+  	  	if (window.location.hash){
+  	  	document.getElementById('en').value = window.location.hash.substr(1);
+  	  	document.getElementById('bn').value = OmicronLab.Avro.Phonetic.parse(document.getElementById('en').value);
+  	  	}
   	});
   
   
